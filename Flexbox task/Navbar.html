@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>TechNova</title>
+		<style>
+			:root {
+				--bg1: #f6f8ff;
+				--bg2: #e9f0ff;
+				--card: #ffffff;
+				--accent: #002b88;
+				--muted: #6b7280;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				margin: 0;
+				font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+				background: linear-gradient(180deg, var(--bg1), var(--bg2));
+				color: #111827;
+                box-shadow: inset 0 0 10px rgba(176, 154, 231, 0.85);
+			}
+
+			.navbar {
+				background: var(--card);
+				box-shadow: 0 2px 4px rgb(55, 113, 249);
+				padding: 16px;
+			}
+
+			.navbar-content {
+				display: flex;
+				align-items: center;
+				gap: 24px;
+			}
+
+			.navbar-brand {
+				font-size: 20px;
+				font-weight: 600;
+				color: var(--accent);
+			}
+
+			.navbar-links {
+				display: flex;
+				gap: 24px;
+			}
+
+			.navbar-link {
+				color: var(--muted);
+				text-decoration: none;
+				font-size: 14px;
+			}
+
+			.navbar-link:hover {
+				color: var(--accent);
+			}
+		</style>
+	</head>
+	<body>
+		<header class="navbar">
+			<div class="navbar-content">
+				<a class="navbar-brand" href="/">TechNova</a>
+				<nav class="navbar-links">
+					<a class="navbar-link" href="/">Home</a>
+					<a class="navbar-link" href="/about">About</a>
+                    <a class="navbar-link" href="/services">Services</a>
+					<a class="navbar-link" href="/contact">Contact</a>
+			
