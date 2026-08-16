@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Ring</title>
+
+    <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 300px;
+            height: 350px;
+            background: #111;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border: 6px solid #e0d7d7;
+            border-image: linear-gradient(45deg, #bad0fa, #fa50b3, #0cf504) 1;
+
+        }
+
+        .ring {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            background: conic-gradient(
+                #88b1fd 35%,
+                #2071eb ,
+                #2404f5 75%,
+                #222 75%
+            );
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner h1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h2>POWER</h2>
+
+        <div class="ring">
+            <div class="inner">
+                <h1>75%</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
