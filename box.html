@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .box {
+        width: 100% !important;
+        height: 100vh !important;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6 {
+        position: sticky;
+        top: 0;
+    }
+
+    /* position --> relative, absolute, fixed, sticky */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1" style="width: 800px; height: 800px; background-color: rgb(7, 9, 7) ; text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">SPIDER MAN</b>
+        </div>
+
+        <div class="box" id="box2" style="width: 800px; height: 800px;  background: linear-gradient(135deg, rgb(247, 244, 244), rgb(8, 6, 6)); text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">IRON MAN</b>
+        </div>
+
+        <div class="box" id="box3" style="width: 800px; height: 800px; background-color: rgb(7, 9, 7); text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">THOR</b>
+        </div>
+
+        <div class="box" id="box4" style="width: 800px; height: 800px;  background: linear-gradient(135deg, rgb(247, 244, 244), rgb(8, 6, 6));; text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">HULK</b>
+        </div>
+
+        <div class="box" id="box5" style="width: 800px; height: 800px; background-color: rgb(14, 11, 14); text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">CAPTAIN AMERICA</b>
+        </div>
+
+        <div class="box" id="box6" style="width: 800px; height: 800px;  background: linear-gradient(135deg, rgb(247, 244, 244), rgb(8, 6, 6));; text-align: center; display: flex; justify-content: center; align-items: center;">
+            <b style="font-size: 50px;">BLACK WIDOW</b>
+        </div>
+
+    </div>
+</body>
+</html>
