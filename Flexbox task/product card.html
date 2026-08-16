@@ -1,0 +1,197 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Product Card</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+				background: #f6f8ff;
+				color: #111827;
+			}
+
+			.page {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 24px;
+			}
+
+			.page h1 {
+				margin: 0 0 20px;
+				font-size: 28px;
+			}
+
+			.product-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+			}
+
+			.product-card {
+				flex: 1 1 240px;
+				max-width: 280px;
+				background: #ffffff;
+				border: 1px solid #e5e7eb;
+				border-radius: 14px;
+				box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.product-image {
+				height: 180px;
+				background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #1d4ed8;
+				font-weight: 700;
+				letter-spacing: 0.04em;
+			}
+
+			.product-content {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				padding: 16px;
+			}
+
+			.product-title {
+				font-size: 18px;
+				font-weight: 700;
+				margin: 0;
+			}
+
+			.product-description {
+				margin: 0;
+				color: #6b7280;
+				font-size: 14px;
+				line-height: 1.5;
+			}
+
+			.product-footer {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 12px;
+				margin-top: 4px;
+			}
+
+			.product-price {
+				font-size: 20px;
+				font-weight: 800;
+				color: #2563eb;
+			}
+
+			.product-button {
+				border: 0;
+				border-radius: 999px;
+				padding: 10px 14px;
+				background: #111827;
+				color: #fff;
+				font-weight: 600;
+				cursor: pointer;
+			}
+
+			@media (max-width: 768px) {
+				.page {
+					padding: 16px;
+				}
+
+				.product-grid {
+					gap: 16px;
+				}
+
+				.product-card {
+					flex-basis: 100%;
+					max-width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main class="page">
+			<h1>Featured Products</h1>
+			<section class="product-grid">
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Wireless Headphones</h2>
+						<p class="product-description">Simple, lightweight headphones with clear sound and comfortable padding.</p>
+						<div class="product-footer">
+							<span class="product-price">$99.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Running Shoes</h2>
+						<p class="product-description">Everyday sneakers with a clean design and a flexible fit for daily wear.</p>
+						<div class="product-footer">
+							<span class="product-price">$79.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Smart Watch</h2>
+						<p class="product-description">A minimal smartwatch with fitness tracking and a bright display.</p>
+						<div class="product-footer">
+							<span class="product-price">$149.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Backpack</h2>
+						<p class="product-description">A simple everyday backpack with enough room for work or travel.</p>
+						<div class="product-footer">
+							<span class="product-price">$59.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Backpack</h2>
+						<p class="product-description">A simple everyday backpack with enough room for work or travel.</p>
+						<div class="product-footer">
+							<span class="product-price">$59.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="product-card">
+					<div class="product-image">Product Image</div>
+					<div class="product-content">
+						<h2 class="product-title">Backpack</h2>
+						<p class="product-description">A simple everyday backpack with enough room for work or travel.</p>
+						<div class="product-footer">
+							<span class="product-price">$59.99</span>
+							<button class="product-button" type="button">Add to Cart</button>
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
