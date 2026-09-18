@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 90vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 90vh;
+            width: 90vw;
+            border: 5px solid black;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            box-shadow: 10px 10px 0px rgb(72, 70, 70);
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+        }
+        #box1{
+            background-color: violet;
+        }
+        #box2{
+            background-color: rgb(75, 75, 242);
+        }
+        #box3{
+            background-color: rgb(178, 230, 46);
+        }
+        #box4{
+            background-color: red;
+        }
+        h1{
+            font-family: comico;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 70px;
+            text-shadow: 10px 10px 0px rgb(41, 34, 34);
+        }
+        @font-face {
+            font-family: 'comico';
+            src: url(./fonts/Matcha\ Mint.otf);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class ='box' id= 'box1'><h1>1</h1></div>
+        <div class ='box' id= 'box2'><h1>2</h1></div>
+
+        <div class ='box' id= 'box3'><h1>3</h1></div>
+        <div class ='box' id= 'box4'><h1>4</h1></div>
+
+
+    </div>
+</body>
+</html>
