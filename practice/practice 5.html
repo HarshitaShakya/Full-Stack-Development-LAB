@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Dashboard</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f4f7;
+        }
+
+        /* Main Dashboard */
+        .dashboard {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #202938;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar p {
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar p:hover {
+            background-color: #374151;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 25px;
+        }
+
+        .main h1 {
+            margin-bottom: 25px;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        /* Bottom Section */
+        .bottom {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+        .box h2 {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <h2>Dashboard</h2>
+
+            <p>Home</p>
+            <p>Users</p>
+            <p>Products</p>
+            <p>Orders</p>
+            <p>Settings</p>
+
+        </div>
+
+
+        <!-- Main Content -->
+
+        <div class="main">
+
+            <h1>Dashboard Overview</h1>
+
+
+            <!-- Cards -->
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>Users</h2>
+                    <p>1,250 Users</p>
+                </div>
+
+                <div class="card">
+                    <h2>Products</h2>
+                    <p>320 Products</p>
+                </div>
+
+                <div class="card">
+                    <h2>Orders</h2>
+                    <p>850 Orders</p>
+                </div>
+
+                <div class="card">
+                    <h2>Revenue</h2>
+                    <p>₹45,000</p>
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Boxes -->
+
+            <div class="bottom">
+
+                <div class="box">
+                    <h2>Recent Orders</h2>
+
+                    <p>Order #101 - Completed</p>
+                    <p>Order #102 - Pending</p>
+                    <p>Order #103 - Completed</p>
+                </div>
+
+
+                <div class="box">
+                    <h2>Quick Actions</h2>
+
+                    <p>Add User</p>
+                    <p>Add Product</p>
+                    <p>View Orders</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```
