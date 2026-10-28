@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Moustache</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5d6b3;
+        }
+
+        .moustache {
+            width: 200px;
+            height: 80px;
+            position: relative;
+        }
+
+        .left {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            border-radius: 100% 0 100% 0;
+            position: absolute;
+            left: 0;
+            top: 20px;
+            transform: rotate(15deg);
+        }
+
+        .right {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            border-radius: 0 100% 0 100%;
+            position: absolute;
+            right: 0;
+            top: 20px;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="moustache">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+</body>
+</html>
