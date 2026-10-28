@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #myId{
+            color: green;
+        }
+
+        .myClass{
+            color: red;
+        }
+
+        input[type="email"]{
+            border: 15px;
+        }
+
+        ul>li.myclass>span{
+            color: yellow;
+        }
+
+       /* div>p{
+            color: aqua;
+        }*/
+
+        h3+p{
+            color: rgb(242, 43, 253);
+        }
+
+        section h3{
+            color: rgb(183, 230, 29);
+            text-shadow: 2px 2px 5px rgb(173, 223, 56);
+            text-transform: uppercase;
+        }
+        div>h2{
+            color: rgb(255, 0, 0);
+            text-shadow: 2px 2px 5px rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h3>Heading</h3>
+        <p>Para1</p>
+        <p>Para2</p>
+    </section>
+
+    <div>
+       <h2>Selectors</h2>
+       <p>Hello</p>
+    </div>
+
+    <ul>
+        <li class="myClass">
+            Universal
+            <span>123</span>
+        </li>
+        <li>Element</li>
+        <li class="myClass">
+            Class
+            <span>123</span>
+        </li>
+        <li id="myId">ID</li>
+        <li>Group</li>
+        <li>Descendant</li> 
+        <li>Child</li>
+        <li>Adjacent sibling</li>
+    </ul>
+
+    <input type="email" placeholder="Email">
+    <br>
+    <input type="text" placeholder="Password">
+
+</body>
+</html>
