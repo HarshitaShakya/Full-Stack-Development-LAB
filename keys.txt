@@ -1,0 +1,16 @@
+<nav>
+<span>
+
+<header class="navbar"></header>
+
+  * {
+    margin: 0;
+  }
+
+display: inline-block;
+
+cursor: pointer;
+
+list-style: none;
+
+text-decoration: none;
