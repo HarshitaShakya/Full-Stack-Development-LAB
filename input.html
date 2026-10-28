@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            border: 2px solid black;
+            display: block;
+            margin-top: 3%;
+            font-size: 13px;
+        }
+
+        input:required {
+            border-color: red;
+        }
+
+        input:optional {
+            border-color: rgb(44, 232, 44);
+        }
+
+        input:enabled {
+            box-shadow: 1px 1px 5px rgb(5, 5, 5);
+        }
+
+        /* Valid inputs */
+        input:valid {
+            border-color: rgb(9, 201, 37);
+        }
+
+        /* Disabled input */
+        input:disabled {
+            border-color: gray;
+            background-color: lightgray;
+        }
+        input:invalid{
+            background-color: rgb(255, 0, 0);
+        }
+
+    input:in-range{
+        background-color: rgb(218, 239, 27);
+    }
+    input:out-of-range{
+        background-color: rgb(251, 43, 227);
+    }
+
+    
+    </style>
+</head>
+
+<body>
+
+    <input type="text"
+           name="Firstname"
+           placeholder="Enter your Firstname"
+           required>
+
+    <input type="text"
+           name="Middlename"
+           placeholder="Enter your Middlename"
+           optional>
+
+    <input type="text"
+           name="Lastname"
+           placeholder="Enter your Lastname"
+           required>
+
+    <input type="text"
+           placeholder="Mathura"
+           disabled>
+
+</body>
+</html>
