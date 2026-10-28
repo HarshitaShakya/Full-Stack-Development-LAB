@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reaction Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+#box {
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.green {
+    background-color: rgb(18, 249, 52) !important;
+    color: white;
+}
+
+</style>
+<body>
+
+    <h2>Reaction Timer Game</h2>
+
+    <h3 id="message">Click Start to play!</h3>
+
+    <div id="box">Click Start</div>
+
+    <p>Your Time: <span id="time">-</span> ms</p>
+    <p>Best Time: <span id="best">-</span> ms</p>
+
+    <button onclick="startGame()">Start</button>
+
+    <script src="Task4.js"></script>
+</body>
+</html>
