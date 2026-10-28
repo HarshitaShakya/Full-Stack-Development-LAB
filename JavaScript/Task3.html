@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whack-a-Wicket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.mole {
+    background-color: rgb(11, 239, 255);
+}
+
+</style>
+<body>
+
+    <h2>Whack-a-Wicket</h2>
+
+    <h3>Score: <span id="score">0</span></h3>
+    <h3>Time: <span id="time">30</span> seconds</h3>
+
+    <div id="grid"></div>
+
+    <button onclick="startGame()">Start Game</button>
+
+    <script src="Task3.js"></script>
+</body>
+</html>
